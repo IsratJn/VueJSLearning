@@ -1,14 +1,51 @@
-var app = new Vue ({
-    el: '#vue',
+var app = new Vue({
+    el: '#vue-js',
     data: {
         product: "Socks",
-        description: "A pair of warm, fuzzy socks!"
+        description: "A pair of warm, fuzzy socks!",
+        test: function () {
+            return "I am just testing if it works inside data object";
+        }
+    },
+    methods: {
+        greet: function () {
+
+            //return "Good Morning!";
+            return this.product;
+
+        }
     }
-})
-var app2 = new Vue ({
-    el: '#vue2',
+
+
+
+});
+
+var demo = new Vue({
+    el: '#name',
     data: {
-        product: "Coats"
+        name: "Israt",
+        website: "https://tabaqcoffee.com/",
+        favoriteDrink: "Coffee",
+
+    },
+    methods: {
+        bade: function () {
+
+            let about = this.name + " loves " + this.favoriteDrink;
+            return about;
+            //return "Good Bye!";
+
+
+        }
     }
+    /*method: {
+        info: function () {
+            let about = this.name + "loves" + this.favoriteDrink;
+            return about;
+        }
+    }*/
 })
+
+
 //here i created a instance of vue
+
