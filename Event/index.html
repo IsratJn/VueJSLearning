@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="vue-app">
+        <h1>Events</h1>
+        <button v-on:click="add(1) ">Add a year</button>
+        <button v-on:click="subtract(1)">Substract a year</button>
+        <p>My age is {{age}}</p>
+        <button v-on:dblclick="add(10)">Add 10 years</button>
+        <button v-on:dblclick="subtract(10)">Subtract 10 years</button>
+
+        <div id="canvas"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
