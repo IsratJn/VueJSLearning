@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Document</title>
 </head>
-<body>
- 
-    
 
-    <div id ="vue">
+<body>
+
+    <div id="vue-js">
         <h1>{{product}}</h1>
         <h3>{{description}}</h3>
+        <h4>{{test()}}</h4>
+        <p>{{greet()}}</p>
 
-       
     </div>
 
-    <h1 id="vue2">{{product}}</h1>
-    
-   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-   <script src = "js/main.js"></script>
+    <div id="name">
+        <p>{{name}}</p>
+        <h1>{{bade()}}</h1>
+        <h4>A link to her favorite coffee shop is given here.</h4>
+        <a v-bind:href="website">Tabaq CoffeeShop</a>
+        <input type="text" v-bind:value="name" />
+
+
+
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
