@@ -27,6 +27,11 @@
         <h4 v-if="onSale">The Mocha is on 15% sale</h4>
         <h4 v-else>Sorry, No discount available</h4>
 
+        <h4 class="h4">The coffee contains:</h4>
+        <ul>
+            <li v-for="detail in details">{{ detail }}</li>
+        </ul>
+
     </div>
     <script src="script.js"></script>
 </body>

@@ -6,6 +6,7 @@ var app = new Vue({
         image: "./Assets/pexels-chevanon-photography-312418.jpg",
         link: "https://tabaqcoffee.com/",
         orderNo: 15,
-        onSale: true
+        onSale: true,
+        details: ["Milk", "Cocoa Bean", "Chocolate Syrup"]
     }
 })
