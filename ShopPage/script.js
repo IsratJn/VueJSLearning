@@ -4,6 +4,8 @@ var app = new Vue({
         product: "Coffee",
         description: "Happiness in a cup!",
         image: "./Assets/pexels-chevanon-photography-312418.jpg",
-        link: "https://tabaqcoffee.com/"
+        link: "https://tabaqcoffee.com/",
+        orderNo: 15,
+        onSale: true
     }
 })
