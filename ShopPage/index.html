@@ -13,27 +13,52 @@
 </head>
 
 <body>
-    <div id="header">
+    <v id="header">
+
         <h1 class="h1">{{product}}</h1>
-        <h2>{{description}}</h2>
+        <h2 class="h2">{{description}}</h2>
+        <img class="image" v-bind:src="image" v-bind:alt="altText" />
+
+        <div>
+            <a class="link" :href="link">Click Here! For the best coffee in town</a>
+        </div>
 
 
-        <img class="sock" v-bind:src="image" v-bind:alt="altText" />
-        <a class="link" :href="link">Click Here! For the best coffee in town</a>
+
         <p v-if="orderNo>10">The Coffee is Available</p>
         <p v-else-if="orderNo>0 && orderNo<10">May be available</p>
         <p v-else>Not Available</p>
 
+
+
         <h4 v-if="onSale">The Mocha is on 15% sale</h4>
         <h4 v-else>Sorry, No discount available</h4>
+
+
 
         <h4 class="h4">The coffee contains:</h4>
         <ul>
             <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
-    </div>
-    <script src="script.js"></script>
+
+
+
+        <button class="button">Add to Cart</button>
+
+
+        <button class="cart">Cart{{cart}}</button>
+
+
+
+
+
+
+
+        </div>
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>

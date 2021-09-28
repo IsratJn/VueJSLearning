@@ -7,6 +7,7 @@ var app = new Vue({
         link: "https://tabaqcoffee.com/",
         orderNo: 15,
         onSale: true,
-        details: ["Milk", "Cocoa Bean", "Chocolate Syrup"]
+        details: ["Milk", "Cocoa Bean", "Chocolate Syrup"],
+        cart: 0
     }
 })

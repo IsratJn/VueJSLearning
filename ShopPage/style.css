@@ -1,10 +1,14 @@
-.sock{
-    height: 300px;
+.image{
+    height: 350px;
+    width: 350px;
 
     
 }
 .h1{
     color: rgb(177, 31, 31);
+}
+.h2{
+    text-align:center;
 }
 .h4{
     color:rgb(78, 96, 128);
@@ -13,4 +17,24 @@
   color: rgb(17, 24, 122);
   
   
+}
+.button{
+    background-color: cornsilk;
+    color: black;
+    text-align: center;
+    display: grid;
+    font-size:large;
+    padding: 32px 16px;
+    border-radius:12px;
+    transition-duration: 0.4s;
+    width:200px;
+    
+}
+
+.button:hover{
+    background-color:gray;
+    color:black;
+}
+.cart{
+    display
 }
