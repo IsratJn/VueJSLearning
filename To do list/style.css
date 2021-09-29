@@ -1,0 +1,33 @@
+.h1{
+    color:darkblue;
+    text-align: center;
+}
+.add{
+    color:black;
+    font-size: large;
+    background-color:rgb(167, 109, 167);
+    margin-left: 10px;
+}
+.tab{
+    
+    display:flexbox;
+    height: 25px;
+    width: 200px;
+    font-size: medium;
+    
+
+}
+.list{
+    font-size:x-large;
+}
+
+.edit{
+  font-size: medium;
+}
+.delete{
+    background-color:crimson ;
+    font-size: medium;
+    position:relative;
+    margin-left: 10px;
+    margin-top: 10px;
+}
