@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href = "style.css">
     <title>Document</title>
 
 </head>
@@ -22,7 +23,9 @@
         <button v-on:dblclick="add(10)">Add 10 years</button>
         <button v-on:dblclick="subtract(10)">Subtract 10 years</button>
 
-        <div id="canvas"></div>
+        <div id="canvas" v-on:mousemove="updateXY">
+
+        </div>
     </div>
 
 

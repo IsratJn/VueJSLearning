@@ -1,7 +1,9 @@
 var app = new Vue({
     el: '#vue-app',
     data: {
-        age: 23
+        age: 23,
+        x=0,
+        y=0
     },
     methods: {
         add: function (inc) {
@@ -9,6 +11,9 @@ var app = new Vue({
         },
         subtract: function (dec) {
             this.age -= dec;
+        },
+        updateXY:function(){
+            
         }
     }
 })
