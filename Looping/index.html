@@ -12,19 +12,32 @@
     <body>
         <div id="vue-app">
             <h1>Looping through lists</h1>
+            
             <ul>
-                <li v-for="character in characters">{{ character }}</li>
+                <li v-for="character in characters"> {{ character }}</li>
             </ul>
+
+        
             <ul>
-                <li v-for="(favorite, index) in favorites">{{ index }} . {{ favorite.name }} - {{ favorite.age }}</li>
+                <div v-for="(favorite, index) in favorites">    
+                <p>At the {{ index }} index we have {{ favorite.name }} - {{ favorite.age }}</p>
+                </div>
             </ul>
             
-            <template v-for="favorite in favorites">
-                <div v-for="(val, key) in favorite">
-                    <p>{{key}} - {{ val }}</p>
-                </div>
-                <hr />
-            </template>
+            <div v-for="(favorite, index) in favorites">
+                <h3>{{index}}=>{{favorite.name}}</h3>
+                <p>{{favorite.age}}</p>
+            </div>
+
+        <template v-for="favorite in favorites">
+            <div v-for="(key,value) in favorite">
+                
+                <p>{{key}} . {{age}}</p>
+
+            </div>
+        </template>
+
+           
         </div>
     </body>
     
