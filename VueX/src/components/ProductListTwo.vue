@@ -18,8 +18,8 @@ export default {
         },
         saleProducts(){
             return this.$store.getters.saleProducts;
+        }
     }
-}
 }
 </script>
 
