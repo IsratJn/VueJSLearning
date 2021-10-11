@@ -9,6 +9,20 @@
         <h3 v-show="character.show">{{ character.speciality }}</h3>
       </li>
     </ul>
+    <button v-on:click="deleteChar">Delete a Ninja</button>
+
+    <hr />
+
+    <ul>
+      <li
+        v-for="character in characters"
+        v-on:click="character.show = !character.show"
+      >
+        <h2>{{ character.name }}</h2>
+        <h3 v-show="character.show">{{ character.speciality }}</h3>
+      </li>
+    </ul>
+    <button v-on:click="deleteChar">Delete a Ninja</button>
   </div>
 </template>
 
@@ -22,6 +36,11 @@ export default {
   },
   data() {
     return {};
+  },
+  methods: {
+    deleteChar: function () {
+      this.characters.pop();
+    },
   },
 };
 </script>
