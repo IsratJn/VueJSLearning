@@ -2,7 +2,7 @@
   <div>
     <app-header></app-header>
     <app-footer></app-footer>
-    <app-content></app-content>
+    <app-content v-bind:characters="characters"></app-content>
   </div>
 </template>
 
@@ -19,7 +19,28 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      characters: [
+        { name: "Himu", speciality: "Khali paye hatahati kora", show: false },
+        {
+          name: "Rupa",
+          speciality: "Himur jonne diner por por opekkha kora",
+          show: false,
+        },
+        {
+          name: "Badol",
+          speciality: "Himu vai er sob kichu k mohimannito kora",
+          show: false,
+        },
+        {
+          name: "Majeda Khala",
+          speciality: "Himu k bokajhoka kora",
+          show: false,
+        },
+        { name: "OC Shaheb", speciality: "Hemu k arrest kora", show: false },
+        { name: "Shuvro", speciality: "Jotilota toiri kora", show: false },
+      ],
+    };
   },
 };
 </script>

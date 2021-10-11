@@ -14,52 +14,38 @@
 
 <script>
 export default {
+  props: {
+    characters: {
+      type: Array,
+      required: true,
+    },
+  },
   data() {
-    return {
-      characters: [
-        { name: "Himu", speciality: "Khali paye hatahati kora", show: false },
-        {
-          name: "Rupa",
-          speciality: "Himur jonne diner por por opekkha kora",
-          show: false,
-        },
-        {
-          name: "Badol",
-          speciality: "Himu vai er sob kichu k mohimannito kora",
-          show: false,
-        },
-        {
-          name: "Majeda Khala",
-          speciality: "Himu k bokajhoka kora",
-          show: false,
-        },
-        { name: "OC Shaheb", speciality: "Hemu k arrest kora", show: false },
-        { name: "Shuvro", speciality: "Jotilota toiri kora", show: false },
-      ],
-    };
+    return {};
   },
 };
 </script>
-#characters{
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
-}
-li{
-    flex-grow: 1;
-    flex-basis: 300px;
-    text-align: center;
-    padding: 30px;
-    border: 1px solid #222;
-    margin: 10px;
-}
+
 <style scoped>
+#characters {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  flex-grow: 1;
+  flex-basis: 300px;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #222;
+  margin: 10px;
+}
 </style>
