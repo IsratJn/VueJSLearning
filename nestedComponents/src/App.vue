@@ -1,7 +1,7 @@
 <template>
   <div>
-    <app-header></app-header>
-    <app-footer></app-footer>
+    <app-header v-bind:title="title"></app-header>
+    <app-footer v-bind:title="title"></app-footer>
     <app-content v-bind:characters="characters"></app-content>
   </div>
 </template>
@@ -40,6 +40,7 @@ export default {
         { name: "OC Shaheb", speciality: "Hemu k arrest kora", show: false },
         { name: "Shuvro", speciality: "Jotilota toiri kora", show: false },
       ],
+      title:"Himu"
     };
   },
 };

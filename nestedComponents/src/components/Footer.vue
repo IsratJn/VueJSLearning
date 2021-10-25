@@ -1,14 +1,19 @@
 <template>
   <footer>
-    <p>{{ copyright }}</p>
+    <p>{{ copyright }} {{title}}</p>
   </footer>
 </template>
 
 <script>
 export default {
+   props:{
+    title:{
+      type:String
+    }
+  },
   data() {
     return {
-      copyright: "Character Analysis of hemu and others",
+      copyright: "Character Analysis of others and ",
     };
   },
 };
