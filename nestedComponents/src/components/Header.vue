@@ -5,6 +5,9 @@
 </template>
 
 <script>
+
+//import {bus} from '../main';
+
 export default {
   props:{
     title:{
@@ -13,12 +16,14 @@ export default {
   },
   data() {
     return {
-      title: "Himu Ebong Tahara",
+      //title: "Himu Ebong Tahara",
     };
   },
   methods:{
     changeTitle:function(){
-     this.$emit('changeTitle', "An established humayun ahmed character");  
+      //this.title = "An established humayun ahmed character";
+     this.$emit('changeTitle', "An established humayun ahmed character"); 
+     //busthis.$emit('titleChanged', "An established humayun ahmed character" ); 
   }
   }
 };
