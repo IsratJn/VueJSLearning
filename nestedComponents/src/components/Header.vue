@@ -5,8 +5,7 @@
 </template>
 
 <script>
-
-//import {bus} from '../main';
+import {bus} from '../main';
 
 export default {
   props:{
@@ -21,9 +20,9 @@ export default {
   },
   methods:{
     changeTitle:function(){
-      //this.title = "An established humayun ahmed character";
-     this.$emit('changeTitle', "An established humayun ahmed character"); 
-     //busthis.$emit('titleChanged', "An established humayun ahmed character" ); 
+      this.title = "An established humayun ahmed character";
+     //this.$emit('changeTitle', "An established humayun ahmed character"); 
+     bus.$emit('titleChanged', "An established humayun ahmed character" ); 
   }
   }
 };
