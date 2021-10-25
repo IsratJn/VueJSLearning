@@ -18,7 +18,7 @@ export default {
   },
   methods:{
     changeTitle:function(){
-      this.title = "Bodle dilam Himur nam";  
+     this.$emit('changeTitle', "An established humayun ahmed character");  
   }
   }
 };
